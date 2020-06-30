@@ -1,206 +1,330 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <title>Portfolio</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg mb-3 navbar-light bg-light">
-        <div class="container">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-navi" aria-controls="bs-navi" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse " id="bs-navi">
-                <ul class="nav nav-tabs ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#about" data-toggle="tab">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio" data-toggle="tab">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skill" data-toggle="tab">Skill</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" data-toggle="tab">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#bs-navi"
+          aria-controls="bs-navi"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navi">
+          <ul class="nav nav-tabs ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about" data-toggle="tab">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio" data-toggle="tab">
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill" data-toggle="tab">Skill</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-toggle="tab">Contact</a>
+            </li>
+            -->
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="container mt-5 px-5">
-        <div class="row mt-4">
-            <div class="tab-content mx-auto">
-                <div id="about" class="tab-pane active">
-                    <div class="text-center mb-5">
-                        <h2>About</h2>
-                    </div>
-                    <!-- <div class="trim">
+      <div class="row mt-4">
+        <div class="tab-content mx-auto">
+          <div id="about" class="tab-pane active">
+            <div class="text-center mb-5">
+              <h2>About</h2>
+            </div>
+            <!-- <div class="trim">
                         <img src="images/profile_img.png">
                     </div> -->
-                    <div class="profile-img mx-auto"></div>
-                    <div>
-                        <table class="table mt-4 mx-auto">
-                            <thead class="bg-primary text-white text-center">
-                                <th class="w-20">KEY</th>
-                                <th class="w-80">VALUE</th>
-                            </thead>
-                            <tbody class="text-center bg-light">
-                                <tr>
-                                    <td>名前</td>
-                                    <td>Kento Jogama</td>
-                                </tr>
-                                <tr>
-                                    <td>出身</td>
-                                    <td>沖永良部島</td>
-                                </tr>
-                                <tr>
-                                    <td>活動拠点</td>
-                                    <td>東京</td>
-                                </tr>
-                                <tr>
-                                    <td>年齢</td>
-                                    <td>28</td>
-                                </tr>
-                                <tr>
-                                    <td>趣味</td>
-                                    <td>カラオケ、映画鑑賞、読書、旅行、マジック、カフェ巡り</td>
-                                </tr>
-                                <tr>
-                                    <td>Twitter</td>
-                                    <td><a href="https://twitter.com/k_jogama" target="_blank">Twitterへ</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Facebook</td>
-                                    <td><a href="https://www.facebook.com/k.jogama" target="_blank">Facebookへ</a></td>
-                                </tr>
-                                <tr>
-                                    <td>GitHub</td>
-                                    <td><a href="https://github.com/k-jogama" target="_blank">GitHubへ</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div id="portfolio" class="tab-pane">
-                    <div class="text-center mb-5">
-                        <h2>Portfolio</h2>
-                    </div>
-                    <div class="card-deck">
-                        <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="images/myshop.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">MyShop</h4>
-                                <p class="card-text">お気に入りの店舗を食べログサイトからスクレイピングして、データを登録するプログラムです。勉強がてらこんなのがあったらいいなを作りました。</p>
-                                <a href="https://github.com/k-jogama/myfdshop" target="_blank" class="btn btn-primary">Githubへ</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="skill" class="tab-pane">
-                    <div class="text-center mb-5">
-                        <h2>Skill</h2>
-                    </div>
-                    <div class="skill-content">
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white bg-primary">HTML</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：2年半</p>
-                                <p class="card-text text-center text-secondary">Template：Blade</p>
-                                <p class="card-text">フロントエンドの開発も行ってきたので、問題なく扱えます。</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white pink">CSS</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：2年半</p>
-                                <p class="card-text text-center text-secondary">FW：Bootstrap4</p>
-                                <p class="card-text">フロントエンドの開発も行ってきたので、問題なく扱えます。</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white bg-success">JavaScript</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：2年半</p>
-                                <p class="card-text text-center text-secondary">FW：jQuery/Vue.js</p>  
-                                <p class="card-text">フロントエンドの開発も行ってきたので、問題なく扱えます。FWは主にjQueryを使用しており、Vue.jsは学習中です。</p> 
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white purple">PHP</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：2年半</p>
-                                <p class="card-text text-center text-secondary">FW：Laravel</p>
-                                <p class="card-text">メイン言語です。PHPでのサーバーサイド側の開発を得意としています。</p>  
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white bg-warning">Java</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：初心者</p>
-                                <p class="card-text text-center text-secondary">FW：Spring</p> 
-                                <p class="card-text">初めの会社で業務未経験のときに研修で扱った程度です。</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white bg-danger">Ruby</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：初心者</p>
-                                <p class="card-text text-center text-secondary">FW：Ruby On Rails</p>
-                                <p class="card-text">独学で扱った程度です。簡単な記事投稿アプリとActionTextを実装しています。</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white bg-dark">Linux</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：1年半</p>
-                                <p class="card-text">VirtualBox,Vagrant,AWS,Docker等での操作や環境構築、RloginやTeraTerm,Terminal等で本番、検証、DB環境の操作を行ったことがあるため問題なく扱えます。</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white bg-info">Git</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：1年半</p>
-                                <p class="card-text">Gitでのバージョン管理を行っているため、問題なく扱えます。学習やPortfolio等も以下のURLにアップしています。<a href="https://github.com/k-jogama" target="_blank">https://github.com/k-jogama</a></p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white orange">AWS</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：初心者</p>
-                                <p class="card-text">独学で扱った程度です。Laravelで自作したPortfolioをAWSにデプロイして運用しました。</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
-                            <div class="card-header text-center text-white blue">Docker</div>
-                            <div class="card-body bg-white">
-                                <p class="card-text text-center text-secondary">経験年数：初心者</p>
-                                <p class="card-text">独学で扱った程度です。Ruby on RailsやLaravelの環境構築などで使用しました。</p>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-                <div id="contact" class="tab-pane">
-                    <div class="text-center mb-5">
-                        <h2>Contact</h2>
-                    </div>
-                    <div class="mb-5">
-                        お問い合わせしたい内容などがありましたら、下記のTwitterかFacebookにDMをする形でお願い致します。
-                    </div>
-                    <div class="text-center">
-                        <a href="https://twitter.com/k_jogama" target="_blank">
-                            <button type="button" class="btn btn-info">Twitter</button>
-                        </a>
-                        <a href="https://www.facebook.com/k.jogama" target="_blank">
-                            <button type="button" class="btn btn-info">Facebook</button>
-                        </a>
-                    </div>
-                </div>
+            <div class="profile-img mx-auto"></div>
+            <div>
+              <table class="table mt-4 mx-auto">
+                <thead class="bg-primary text-white text-center">
+                  <th class="w-20">KEY</th>
+                  <th class="w-80">VALUE</th>
+                </thead>
+                <tbody class="text-center bg-light">
+                  <tr>
+                    <td>名前</td>
+                    <!-- <td>Kento Jogama</td> -->
+                    <td>K.J</td>
+                  </tr>
+                  <tr>
+                    <td>出身</td>
+                    <td>沖永良部島</td>
+                  </tr>
+                  <tr>
+                    <td>活動拠点</td>
+                    <td>東京</td>
+                  </tr>
+                  <tr>
+                    <td>年齢</td>
+                    <td>28</td>
+                  </tr>
+                  <tr>
+                    <td>趣味</td>
+                    <td>
+                      カラオケ、映画鑑賞、読書、旅行、マジック、カフェ巡り
+                    </td>
+                  </tr>
+                  <!--
+                  <tr>
+                    <td>Twitter</td>
+                    <td>
+                      <a href="https://twitter.com/k_jogama" target="_blank">
+                        Twitterへ
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Facebook</td>
+                    <td>
+                      <a
+                        href="https://www.facebook.com/k.jogama"
+                        target="_blank"
+                      >
+                        Facebookへ
+                      </a>
+                    </td>
+                  </tr>
+                  -->
+                  <tr>
+                    <td>GitHub</td>
+                    <td>
+                      <a href="https://github.com/k-jogama" target="_blank">
+                        GitHubへ
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+          <div id="portfolio" class="tab-pane">
+            <div class="text-center mb-5">
+              <h2>Portfolio</h2>
+            </div>
+            <div class="card-deck">
+              <div class="card" style="width: 20rem;">
+                <img
+                  class="card-img-top"
+                  src="images/myshop.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">MyShop</h4>
+                  <p class="card-text">
+                    お気に入りの店舗を食べログサイトからスクレイピングして、データを登録するプログラムです。勉強がてらこんなのがあったらいいなを作りました。
+                  </p>
+                  <a
+                    href="https://github.com/k-jogama/myfdshop"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    Githubへ
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="skill" class="tab-pane">
+            <div class="text-center mb-5">
+              <h2>Skill</h2>
+            </div>
+            <div class="skill-content">
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white bg-primary">
+                  HTML
+                </div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：2年半
+                  </p>
+                  <p class="card-text text-center text-secondary">
+                    Template：Blade
+                  </p>
+                  <p class="card-text">
+                    フロントエンドの開発も行ってきたので、問題なく扱えます。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white pink">CSS</div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：2年半
+                  </p>
+                  <p class="card-text text-center text-secondary">
+                    FW：Bootstrap4
+                  </p>
+                  <p class="card-text">
+                    フロントエンドの開発も行ってきたので、問題なく扱えます。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white bg-success">
+                  JavaScript
+                </div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：2年半
+                  </p>
+                  <p class="card-text text-center text-secondary">
+                    FW：jQuery/Vue.js
+                  </p>
+                  <p class="card-text">
+                    フロントエンドの開発も行ってきたので、問題なく扱えます。FWは主にjQueryを使用しており、Vue.jsは学習中です。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white purple">PHP</div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：2年半
+                  </p>
+                  <p class="card-text text-center text-secondary">
+                    FW：Laravel
+                  </p>
+                  <p class="card-text">
+                    メイン言語です。PHPでのサーバーサイド側の開発を得意としています。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white bg-warning">
+                  Java
+                </div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：初心者
+                  </p>
+                  <p class="card-text text-center text-secondary">FW：Spring</p>
+                  <p class="card-text">
+                    初めの会社で業務未経験のときに研修で扱った程度です。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white bg-danger">
+                  Ruby
+                </div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：初心者
+                  </p>
+                  <p class="card-text text-center text-secondary">
+                    FW：Ruby On Rails
+                  </p>
+                  <p class="card-text">
+                    独学で扱った程度です。簡単な記事投稿アプリとActionTextを実装しています。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white bg-dark">
+                  Linux
+                </div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：1年半
+                  </p>
+                  <p class="card-text">
+                    VirtualBox,Vagrant,AWS,Docker等での操作や環境構築、RloginやTeraTerm,Terminal等で本番、検証、DB環境の操作を行ったことがあるため問題なく扱えます。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white bg-info">
+                  Git
+                </div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：1年半
+                  </p>
+                  <p class="card-text">
+                    Gitでのバージョン管理を行っているため、問題なく扱えます。学習やPortfolio等も以下のURLにアップしています。
+                    <a href="https://github.com/k-jogama" target="_blank">
+                      https://github.com/k-jogama
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white orange">AWS</div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：初心者
+                  </p>
+                  <p class="card-text">
+                    独学で扱った程度です。Laravelで自作したPortfolioをAWSにデプロイして運用しました。
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3 col-lg-5 float-left p-0 my-4 item">
+                <div class="card-header text-center text-white blue">
+                  Docker
+                </div>
+                <div class="card-body bg-white">
+                  <p class="card-text text-center text-secondary">
+                    経験年数：初心者
+                  </p>
+                  <p class="card-text">
+                    独学で扱った程度です。Ruby on
+                    RailsやLaravelの環境構築などで使用しました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contact" class="tab-pane">
+            <div class="text-center mb-5">
+              <h2>Contact</h2>
+            </div>
+            <div class="mb-5">
+              お問い合わせしたい内容などがありましたら、下記のTwitterかFacebookにDMをする形でお願い致します。
+            </div>
+            <div class="text-center">
+              <a href="https://twitter.com/k_jogama" target="_blank">
+                <button type="button" class="btn btn-info">Twitter</button>
+              </a>
+              <a href="https://www.facebook.com/k.jogama" target="_blank">
+                <button type="button" class="btn btn-info">Facebook</button>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
